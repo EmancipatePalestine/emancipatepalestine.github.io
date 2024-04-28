@@ -10,5 +10,13 @@ const articles = [
             "https://www.nytimes.com/live/2024/02/29/world/israel-hamas-war-gaza-news",
             "https://www.bbc.com/news/world-middle-east-68445973"
         ]
+    },{
+        title: "Other Resources",
+        description: "Resources to find what other people have made",
+        image: "https://images.pexels.com/photos/10010406/pexels-photo-10010406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "People marching to protest against the israeli occupying force",
+        articleLinks: [
+            "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu"
+        ]
     }
 ]
