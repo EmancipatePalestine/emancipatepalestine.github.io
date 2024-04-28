@@ -1470,10 +1470,6 @@ html {
   gap: 1rem;
 }
 
-.self-center {
-  align-self: center;
-}
-
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
 }
@@ -1527,22 +1523,18 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.outline-black {
-  outline-color: #000;
-}
-
 .group:focus .group-focus\:rotate-90 {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@media (orientation: landscape) {
+@media (min-width: 50rem) {
   .phone-landscape\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (orientation: landscape) and (min-width: 80rem) {
+@media (min-width: 100rem) {
   .desktop\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
