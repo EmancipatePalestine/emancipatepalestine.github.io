@@ -17,8 +17,14 @@ const articles = [
         image: "https://images.pexels.com/photos/10010406/pexels-photo-10010406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "People marching to protest against the israeli occupying force",
         articleLinks: [
-            "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
-            "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
+            {
+                link: "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
+                name: "Resources for Palestinian Solidarity"
+            },
+            {
+                name: "Books and articles about palestine",
+                link: "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
+            }
         ]
     }
 ]

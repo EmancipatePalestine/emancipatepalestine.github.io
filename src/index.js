@@ -87,11 +87,20 @@ function CreateCard(CardInfo) {
             dropdownUnorderedElement.setAttribute("tabindex", "0");
             dropdownUnorderedElement.classList.add( "dropdown-content", "z-[1]", "menu", "shadow", "bg-base-100", "rounded-box", "btn-block" );
             CardInfo.articleLinks.forEach(element => {
+                let href;
+                let name;
+                if (typeof(element) == "object") {
+                    href = element.link;
+                    name = element.name;
+                } 
+                else if(typeof(element) == "string") {
+                    href = element;
+                    name = (new URL(element)).host
+                }
                 let dropdownLiElement = document.createElement("li");
                 let dropdownLiAElement = document.createElement("a");
-                dropdownLiAElement.setAttribute("href", element);
-                let url = new URL(element);
-                let dropdownLiAText = document.createTextNode(url.host);
+                dropdownLiAElement.setAttribute("href", href);
+                let dropdownLiAText = document.createTextNode(name);
                 dropdownLiAElement.appendChild(dropdownLiAText);
                 dropdownLiElement.appendChild(dropdownLiAElement);
                 dropdownUnorderedElement.appendChild(dropdownLiElement);

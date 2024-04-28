@@ -13,6 +13,9 @@ const data=
     // Links to the articles comma seperated
     articleLinks: [
         "",
-        ""
+        {
+            name: "",
+            link: ""
+        }
     ]
 };
