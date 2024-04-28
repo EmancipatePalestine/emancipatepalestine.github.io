@@ -12,6 +12,7 @@ const articles = [
         ]
     },{
         title: "Other Resources",
+        date: "",
         description: "Resources to find what other people have made",
         image: "https://images.pexels.com/photos/10010406/pexels-photo-10010406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "People marching to protest against the israeli occupying force",
