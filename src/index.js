@@ -7,7 +7,9 @@
 //     articleLinks: ["https://www.google.com"]
 // }
 
-function CreateCard(CardInfo) {
+let buttonArr = [];
+
+function CreateCard(CardInfo, CardIndex) {
     let card = document.createElement("div");
 
     card.classList.add(...["card","card-compact","bg-base-300","shadow-xl"]);
@@ -67,13 +69,15 @@ function CreateCard(CardInfo) {
             cardBody.appendChild(buttonElement);
         }
         else {
-            let dropdownElement = document.createElement("div");
-            dropdownElement.classList.add(...["card-actions","justify-end","dropdown"]);
+            let dropdownElement = document.createElement("details");
+            dropdownElement.classList.add("card-actions", "justify-end", "dropdown");
 
-            let dropdownButtonElement = document.createElement("div");
-            dropdownButtonElement.setAttribute("tabindex", "0");
-            dropdownButtonElement.setAttribute("role", "button");
+            let dropdownButtonElement = document.createElement("summary");
+            // dropdownButtonElement.setAttribute("tabindex", "0");
+            // dropdownButtonElement.setAttribute("role", "button");
             dropdownButtonElement.classList.add("btn", "btn-success", "btn-block", "group");
+            dropdownButtonElement.id = "btn-" + CardIndex;
+            buttonArr.push(dropdownButtonElement);
             let dropdownButtonText = document.createTextNode("Go to articles! ");
             let dropdownTextArrowElement = document.createElement("div");
             dropdownTextArrowElement.classList.add("group-focus:rotate-90");
@@ -84,22 +88,23 @@ function CreateCard(CardInfo) {
             dropdownElement.appendChild(dropdownButtonElement);
 
             let dropdownUnorderedElement = document.createElement("ul");
-            dropdownUnorderedElement.setAttribute("tabindex", "0");
-            dropdownUnorderedElement.classList.add( "dropdown-content", "z-[1]", "menu", "shadow", "bg-base-100", "rounded-box", "btn-block" );
+            // dropdownUnorderedElement.setAttribute("tabindex", "-1");
+            dropdownUnorderedElement.classList.add("dropdown-content", "z-[1]", "menu", "shadow", "bg-base-100", "rounded-box", "btn-block");
             CardInfo.articleLinks.forEach(element => {
                 let href;
                 let name;
-                if (typeof(element) == "object") {
+                if (typeof (element) == "object") {
                     href = element.link;
                     name = element.name;
-                } 
-                else if(typeof(element) == "string") {
+                }
+                else if (typeof (element) == "string") {
                     href = element;
                     name = (new URL(element)).host
                 }
                 let dropdownLiElement = document.createElement("li");
                 let dropdownLiAElement = document.createElement("a");
                 dropdownLiAElement.setAttribute("href", href);
+                dropdownLiAElement.setAttribute("tabindex", "0");
                 let dropdownLiAText = document.createTextNode(name);
                 dropdownLiAElement.appendChild(dropdownLiAText);
                 dropdownLiElement.appendChild(dropdownLiAElement);
@@ -108,6 +113,48 @@ function CreateCard(CardInfo) {
 
             dropdownElement.appendChild(dropdownUnorderedElement);
 
+            let currLiIndex = 0;
+            function onKeyPress(keypressEvent) {
+                let currentActiveElement = document.activeElement;
+                let listItemFocused = dropdownUnorderedElement.contains(currentActiveElement);
+
+                switch (keypressEvent.key) {
+                    case "ArrowDown":
+                        currLiIndex++
+                        break;
+                    case "ArrowUp":
+                        currLiIndex--
+                        if (currLiIndex >= 0){
+                            break;
+                        }
+
+                    case "Escape":
+                        dropdownElement.removeAttribute("open");
+                        dropdownElement.removeEventListener("keypress", onKeyPress);
+                        dropdownButtonElement.focus()
+                        currLiIndex = 0;
+                        return;
+                }
+                if (!listItemFocused) {
+                    currLiIndex = 0;
+                }
+                let listItemArr = dropdownUnorderedElement.getElementsByTagName("a");
+
+                currLiIndex = Math.min(listItemArr.length - 1, currLiIndex);
+                listItemArr[currLiIndex].focus();
+            }
+            dropdownElement.addEventListener("focusout", (focusEvent) => {
+                if (dropdownElement.contains(focusEvent.relatedTarget)) {
+                    return;
+                }
+                dropdownElement.removeAttribute("open");
+                dropdownElement.removeEventListener("keypress", onKeyPress);
+                currLiIndex = 0;
+            });
+            dropdownElement.addEventListener("focusin", (_) => {
+                dropdownElement.addEventListener("keydown", onKeyPress)
+            })
+
             cardBody.appendChild(dropdownElement);
         }
     }
@@ -115,6 +162,35 @@ function CreateCard(CardInfo) {
     
     document.getElementById("main").appendChild(card);
 }
-articles.forEach(element => {
-    CreateCard(element);
+
+let currButtonIndex = 0;
+document.addEventListener("keydown", (keypressEvent) => {
+    switch (keypressEvent.key) {
+        case "ArrowRight":
+            currButtonIndex++
+            currButtonIndex = Math.min(buttonArr.length -1, currButtonIndex)
+            buttonArr[currButtonIndex].focus();
+            break;
+        case "ArrowLeft":
+            currButtonIndex--
+            currButtonIndex= Math.max(0, currButtonIndex);
+            buttonArr[currButtonIndex].focus();
+            break;
+        case "ArrowDown":
+            if (document.activeElement === buttonArr[currButtonIndex]) {
+                buttonArr[currButtonIndex].parentElement.setAttribute("open", "")
+            }
+            break;
+    }
+
+})
+
+document.addEventListener("focusin", (focusEvent) => {
+    if (focusEvent.target.classList.contains("btn")) {
+        currButtonIndex = parseInt(focusEvent.target.id.substring(4));
+    }
+})
+
+articles.forEach((element, i) => {
+    CreateCard(element,i);
 });
