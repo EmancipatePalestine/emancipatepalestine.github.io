@@ -12,8 +12,7 @@ let buttonArr = [];
 function CreateCard(CardInfo, CardIndex) {
     let card = document.createElement("div");
 
-    card.classList.add("card","card-compact","bg-base-300","shadow-xl");
-    card.style.alignSelf="flex-start";
+    card.classList.add("card","card-compact","bg-base-300","shadow-xl","self-start");
     
     let figureElement = document.createElement("figure");
     let imageElement = document.createElement("img");
