@@ -60,6 +60,7 @@ function CreateCard(CardInfo, CardIndex) {
     cardBody.appendChild(descriptionElement);
 
     if (CardInfo.articleLinks != null){
+        let currButtonIndex = 0;
         if (CardInfo.articleLinks.length == 1) {
             let buttonElement = document.createElement("a");
             buttonElement.classList.add(...["btn","btn-success","btn-block"]);
@@ -67,6 +68,37 @@ function CreateCard(CardInfo, CardIndex) {
             let buttonText = document.createTextNode("Go to article! 👉");
             buttonElement.appendChild(buttonText);
             cardBody.appendChild(buttonElement);
+            buttonElement.id = "btn-" + CardIndex;
+            buttonArr.push(buttonElement);
+            buttonElement.addEventListener("keydown", (keypressEvent) => {
+                switch (keypressEvent.key) {
+                    case "ArrowRight":
+                        currButtonIndex++
+                        currButtonIndex = Math.min(buttonArr.length - 1, currButtonIndex)
+                        buttonArr[currButtonIndex].focus();
+                        break;
+                    case "ArrowLeft":
+                        currButtonIndex--
+                        currButtonIndex = Math.max(0, currButtonIndex);
+                        buttonArr[currButtonIndex].focus();
+                        break;
+                    case "ArrowDown":
+                        if (document.activeElement === buttonArr[currButtonIndex]) {
+                            parentEle = buttonArr[currButtonIndex].parentElement;
+                            if (parentEle.localName == "details") {
+                                parentEle.setAttribute("open", "");
+                            }
+                        }
+                        break;
+                }
+
+            })
+
+            buttonElement.addEventListener("focusin", (focusEvent) => {
+                if (focusEvent.target.classList.contains("btn")) {
+                    currButtonIndex = parseInt(focusEvent.target.id.substring(4));
+                }
+            })
         }
         else {
             let dropdownElement = document.createElement("details");
@@ -87,7 +119,6 @@ function CreateCard(CardInfo, CardIndex) {
             dropdownButtonElement.appendChild(dropdownTextArrowElement);
             dropdownElement.appendChild(dropdownButtonElement);
 
-            let currButtonIndex = 0;
             dropdownButtonElement.addEventListener("keydown", (keypressEvent) => {
                 switch (keypressEvent.key) {
                     case "ArrowRight":
@@ -193,6 +224,15 @@ function CreateCard(CardInfo, CardIndex) {
     document.getElementById("main").appendChild(card);
 }
 
+let deathCounter = 0;
+let deathCounterElement = document.getElementById("death-counter");
+window.setInterval(() => {
+    deathCounter++;
+    if (deathCounter > 99) {
+       deathCounter = 0;
+    }
+    deathCounterElement.style.setProperty("--value", deathCounter)
+}, 3000)
 
 articles.forEach((element, i) => {
     CreateCard(element,i);

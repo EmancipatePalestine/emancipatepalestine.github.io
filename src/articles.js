@@ -1,16 +1,5 @@
 const articles = [
     {
-        title: "UN experts condemn 'flour massacre'",
-        date: "29/02/2024",
-        description: "Israeli Occupying Forces unleashed violence massacring 112 people. These people only wished to gather flour.",
-        image: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/623C/production/_132784152_drone2.png.webp",
-        alt: "Israeli IDF drone looking over the massacre",
-        articleLinks: [
-            "https://www.ohchr.org/en/press-releases/2024/03/un-experts-condemn-flour-massacre-urge-israel-end-campaign-starvation-gaza",
-            "https://www.nytimes.com/live/2024/02/29/world/israel-hamas-war-gaza-news",
-            "https://www.bbc.com/news/world-middle-east-68445973"
-        ]
-    },{
         title: "Other Resources",
         date: "",
         description: "Resources to find what other people have made",
@@ -37,6 +26,86 @@ const articles = [
                 name: "Books and articles about palestine",
                 link: "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
             }
+        ]
+    },{
+        title: "Flour Massacre",
+        date: "29/02/2024",
+        description: "Israeli Occupying Forces unleashed violence massacring 112 people. These people only wished to gather flour.",
+        image: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/623C/production/_132784152_drone2.png.webp",
+        alt: "Israeli IDF drone looking over the massacre",
+        articleLinks: [
+            {
+                link: "https://www.972mag.com/gaza-aid-convoy-massacre-testimonies/",
+                name: "Testimonies"
+            },
+            {
+                link: "https://www.cnn.com/2024/03/08/middleeast/gaza-flour-massacre-idf-report-intl/index.html",
+                name: "IDF Investigates itself"
+            },
+            "https://www.ohchr.org/en/press-releases/2024/03/un-experts-condemn-flour-massacre-urge-israel-end-campaign-starvation-gaza",
+            "https://www.nytimes.com/live/2024/02/29/world/israel-hamas-war-gaza-news",
+            "https://www.bbc.com/news/world-middle-east-68445973"
+        ]
+    },{
+        title: "More Civilian Deaths while waiting for aid",
+        date: "12/03/2024",
+        description: "400 people killed, 1,300 injured waiting for aid",
+        image: "https://cdn.pixabay.com/photo/2022/08/23/09/18/smoke-7405419_960_720.jpg",
+        alt: "2 women covering their heads with smoke in the background",
+        articleLinks: [
+            "https://www.aa.com.tr/en/middle-east/several-killed-dozens-injured-as-israeli-forces-shell-palestinians-waiting-for-aid-in-northern-gaza/3162087"
+        ]
+    },{
+        title: "Media Bias Gaza Reports",
+        date: "2023-2024",
+        description: "The Centre for Media Monitoring report on Gaza. Along side other reports.",
+        image: "https://images.pexels.com/photos/11556012/pexels-photo-11556012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "Man giving speech on microphone with palestine flag behind him",
+        articleLinks: [
+            "https://cfmm.org.uk/resources/publication/cfmm-report-media-bias-gaza-2023-24/",
+            "https://theintercept.com/2024/01/09/newspapers-israel-palestine-bias-new-york-times/",
+            {
+                name: "Journalist Comparing articles tweet",
+                link: "https://twitter.com/AssalRad/status/1767728865537839317"
+            }
+        ]
+    },{
+        title:"Israel Obstructs Aid To Gaza",
+        date: "12/10/2023-07/03/2024",
+        description: "How Israel has been pureposefully blocking aid to help the civilians of Gaza",
+        image: "https://images.pexels.com/photos/8078379/pexels-photo-8078379.jpeg",
+        alt: "Homeless and hungry on a sign",
+        articleLinks: [
+            {
+                name: "Gaza Supplies and Dispatch Tracking",
+                link: "https://app.powerbi.com/view?r=eyJrIjoiZTVkYmEwNmMtZWYxNy00ODhlLWI2ZjctNjIzMzQ5OGQxNzY5IiwidCI6IjI2MmY2YTQxLTIwZTktNDE0MC04ZDNlLWZkZjVlZWNiNDE1NyIsImMiOjl9&pageName=ReportSection3306863add46319dc574"
+            },
+            {
+                name: "Gaza Airdrop Don't Solve Hunger Crisis",
+                link: "https://www.wsj.com/world/middle-east/gaza-airdrops-take-huge-effort-and-dont-solve-hunger-crisis-2c2f2d11"
+            },
+            {
+                name: "Israel Cuts Water Leading to Health Crisis",
+                link: "https://www.hrw.org/news/2023/11/16/israeli-authorities-cutting-water-leading-public-health-crisis-gaza"
+            },
+            {
+                name: "Israel says no water, no electricity, and no fuel for Gaza",
+                link: "https://www.theguardian.com/world/2023/oct/12/no-power-water-or-fuel-to-gaza-until-hostages-freed-says-israeli-minister"
+            },{
+                name: "Tweet by Israel katz saying no electricity, no water, no fuel",
+                link: "https://twitter.com/Israel_katz/status/1712356130377113904"
+            },
+            "https://www.refugeesinternational.org/reports-briefs/siege-and-starvation-how-israel-obstructs-aid-to-gaza/",
+        ]
+    },{
+        title: "How the US Supports the genocide on Gaza",
+        date: "26/02/2024",
+        description: "Articles talking about how the US gives weapons to Israel to genocide the people of Gaza.",
+        image: "https://cdn.pixabay.com/photo/2021/12/06/03/20/university-of-connecticut-6849167_960_720.jpg",
+        alt: "Joe Biden in a black car near a university",
+        articleLinks: [
+            "https://www.aa.com.tr/en/middle-east/israel-s-war-on-gaza-how-has-the-us-extended-military-support-to-its-biggest-recipient/3148155#:~:text=Munitions%20and%20weapons&text=A%20report%20by%20the%20Wall,direct%20attack%20munitions%20(JDAM).",
+
         ]
     }
 ]
