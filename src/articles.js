@@ -7,6 +7,10 @@ const articles = [
         alt: "People marching to protest against the israeli occupying force",
         articleLinks: [
             {
+                name: "Israel genocide tracker",
+                link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
+            },
+            {
                 link: "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
                 name: "Resources for Palestinian Solidarity"
             },
