@@ -178,7 +178,10 @@ document.addEventListener("keydown", (keypressEvent) => {
             break;
         case "ArrowDown":
             if (document.activeElement === buttonArr[currButtonIndex]) {
-                buttonArr[currButtonIndex].parentElement.setAttribute("open", "")
+                parentEle = buttonArr[currButtonIndex].parentElement;
+                if (parentEle.localName == "details") {
+                    parentEle.setAttribute("open", "");
+                }
             }
             break;
     }
