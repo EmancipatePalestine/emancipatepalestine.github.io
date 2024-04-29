@@ -84,26 +84,16 @@ const articles = [
             "https://www.aa.com.tr/en/middle-east/several-killed-dozens-injured-as-israeli-forces-shell-palestinians-waiting-for-aid-in-northern-gaza/3162087"
         ]
     },{
-        title: "Media Bias Gaza Reports",
-        date: "2023-2024",
-        description: "The Centre for Media Monitoring report on Gaza. Along side other reports.",
-        image: "https://images.pexels.com/photos/11556012/pexels-photo-11556012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "Man giving speech on microphone with palestine flag behind him",
-        articleLinks: [
-            "https://cfmm.org.uk/resources/publication/cfmm-report-media-bias-gaza-2023-24/",
-            "https://theintercept.com/2024/01/09/newspapers-israel-palestine-bias-new-york-times/",
-            {
-                name: "Journalist Comparing articles tweet",
-                link: "https://twitter.com/AssalRad/status/1767728865537839317"
-            }
-        ]
-    },{
         title:"Israel Obstructs Aid To Gaza",
         date: "12/10/2023-07/03/2024",
         description: "How Israel has been pureposefully blocking aid to help the civilians of Gaza",
         image: "https://images.pexels.com/photos/8078379/pexels-photo-8078379.jpeg",
         alt: "Homeless and hungry on a sign",
         articleLinks: [
+            {
+                name: "Thread of events of IDF Shootings while getting aid",
+                link: "https://twitter.com/muhammadshehad2/status/1763651267237216587"
+            },
             {
                 name: "Gaza Supplies and Dispatch Tracking",
                 link: "https://app.powerbi.com/view?r=eyJrIjoiZTVkYmEwNmMtZWYxNy00ODhlLWI2ZjctNjIzMzQ5OGQxNzY5IiwidCI6IjI2MmY2YTQxLTIwZTktNDE0MC04ZDNlLWZkZjVlZWNiNDE1NyIsImMiOjl9&pageName=ReportSection3306863add46319dc574"
@@ -124,6 +114,20 @@ const articles = [
                 link: "https://twitter.com/Israel_katz/status/1712356130377113904"
             },
             "https://www.refugeesinternational.org/reports-briefs/siege-and-starvation-how-israel-obstructs-aid-to-gaza/",
+        ]
+    },{
+        title: "Media Bias Gaza Reports",
+        date: "2023-2024",
+        description: "The Centre for Media Monitoring report on Gaza. Along side other reports.",
+        image: "https://images.pexels.com/photos/11556012/pexels-photo-11556012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "Man giving speech on microphone with palestine flag behind him",
+        articleLinks: [
+            "https://cfmm.org.uk/resources/publication/cfmm-report-media-bias-gaza-2023-24/",
+            "https://theintercept.com/2024/01/09/newspapers-israel-palestine-bias-new-york-times/",
+            {
+                name: "Journalist Comparing articles tweet",
+                link: "https://twitter.com/AssalRad/status/1767728865537839317"
+            }
         ]
     },{
         title: "How the US Supports the genocide on Gaza",
