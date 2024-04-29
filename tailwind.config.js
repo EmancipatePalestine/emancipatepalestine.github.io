@@ -5,7 +5,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      'phone-landscape': {'raw': '(min-width: 50rem)'},
+      'phone-landscape': {'raw': '(min-width: 40rem)'},
       'desktop': { 'raw': '(min-width: 100rem)'},
     },
     extend: {
@@ -16,7 +16,7 @@ module.exports = {
   ],
 
   daisyui: {
-    themes: ["light", "dracula"]
+    themes: ["dracula"]
   }
 }
 
