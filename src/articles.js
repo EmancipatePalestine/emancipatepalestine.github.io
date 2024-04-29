@@ -22,6 +22,18 @@ const articles = [
                 name: "Resources for Palestinian Solidarity"
             },
             {
+                link: "https://docs.google.com/document/d/1tDok9kGqHQAsVhc27kpLLvS8BIdUqNk09PfV1_vLmwo/edit#heading=h.85rdaapi37z8",
+                name: "Daily Email automaition + resources + medical aid"
+            },
+            {
+                link: "https://ceasefiretoday.com/",
+                name: "Gaza ceasefire options what YOU can do."
+            },
+            {
+                link: "https://campusbailfunds.com/",
+                name: "Campus bail funds"
+            },
+            {
                 name: "Books and articles about palestine",
                 link: "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
             }
