@@ -39,6 +39,10 @@ const articles = [
         alt: "Protesters with police infront of them.",
         articleLinks:[
             {
+                name: "Protester Tips and Tricks",
+                link: "https://docs.google.com/document/d/1w6yaIjwFsssKVA-aYO1R5NNrmkXEDmoChm2mGrR3Mi0/edit?usp=sharing"
+            },
+            {
                 name: "NYU Protest Tips and Resources",
                 link: "https://www.law.nyu.edu/centers/race-inequality-law/protest-tips",
             }, 
