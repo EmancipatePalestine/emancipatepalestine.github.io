@@ -87,6 +87,36 @@ function CreateCard(CardInfo, CardIndex) {
             dropdownButtonElement.appendChild(dropdownTextArrowElement);
             dropdownElement.appendChild(dropdownButtonElement);
 
+            let currButtonIndex = 0;
+            dropdownButtonElement.addEventListener("keydown", (keypressEvent) => {
+                switch (keypressEvent.key) {
+                    case "ArrowRight":
+                        currButtonIndex++
+                        currButtonIndex = Math.min(buttonArr.length - 1, currButtonIndex)
+                        buttonArr[currButtonIndex].focus();
+                        break;
+                    case "ArrowLeft":
+                        currButtonIndex--
+                        currButtonIndex = Math.max(0, currButtonIndex);
+                        buttonArr[currButtonIndex].focus();
+                        break;
+                    case "ArrowDown":
+                        if (document.activeElement === buttonArr[currButtonIndex]) {
+                            parentEle = buttonArr[currButtonIndex].parentElement;
+                            if (parentEle.localName == "details") {
+                                parentEle.setAttribute("open", "");
+                            }
+                        }
+                        break;
+                }
+
+            })
+
+            dropdownButtonElement.addEventListener("focusin", (focusEvent) => {
+                if (focusEvent.target.classList.contains("btn")) {
+                    currButtonIndex = parseInt(focusEvent.target.id.substring(4));
+                }
+            })
             let dropdownUnorderedElement = document.createElement("ul");
             // dropdownUnorderedElement.setAttribute("tabindex", "-1");
             dropdownUnorderedElement.classList.add("dropdown-content", "z-[1]", "menu", "shadow", "bg-base-100", "rounded-box", "btn-block");
@@ -124,7 +154,7 @@ function CreateCard(CardInfo, CardIndex) {
                         break;
                     case "ArrowUp":
                         currLiIndex--
-                        if (currLiIndex >= 0){
+                        if (currLiIndex >= 0) {
                             break;
                         }
 
@@ -163,36 +193,6 @@ function CreateCard(CardInfo, CardIndex) {
     document.getElementById("main").appendChild(card);
 }
 
-let currButtonIndex = 0;
-document.addEventListener("keydown", (keypressEvent) => {
-    switch (keypressEvent.key) {
-        case "ArrowRight":
-            currButtonIndex++
-            currButtonIndex = Math.min(buttonArr.length -1, currButtonIndex)
-            buttonArr[currButtonIndex].focus();
-            break;
-        case "ArrowLeft":
-            currButtonIndex--
-            currButtonIndex= Math.max(0, currButtonIndex);
-            buttonArr[currButtonIndex].focus();
-            break;
-        case "ArrowDown":
-            if (document.activeElement === buttonArr[currButtonIndex]) {
-                parentEle = buttonArr[currButtonIndex].parentElement;
-                if (parentEle.localName == "details") {
-                    parentEle.setAttribute("open", "");
-                }
-            }
-            break;
-    }
-
-})
-
-document.addEventListener("focusin", (focusEvent) => {
-    if (focusEvent.target.classList.contains("btn")) {
-        currButtonIndex = parseInt(focusEvent.target.id.substring(4));
-    }
-})
 
 articles.forEach((element, i) => {
     CreateCard(element,i);
