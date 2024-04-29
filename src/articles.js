@@ -32,6 +32,30 @@ const articles = [
             }
         ]
     },{
+        title: "Protesters' Rights",
+        date: "",
+        description: "Rights you have as a protester.",
+        image: "https://images.pexels.com/photos/18862248/pexels-photo-18862248/free-photo-of-police-standing-in-front-of-the-protestants-with-the-flag-of-palestine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "Protesters with police infront of them.",
+        articleLinks:[
+            {
+                name: "NYU Protest Tips and Resources",
+                link: "https://www.law.nyu.edu/centers/race-inequality-law/protest-tips",
+            }, 
+            {
+                name:"DSA Guidlines for Safe Protesting",
+                link:"https://dsa-la.org/guidelines-for-safe-protesting/"
+            },
+            {
+                name: "Activist Toolkits",
+                link: "https://www.thedirectactionmovement.com/activisttoolkit"
+            },
+            {
+                name: "ACLU Protesters' Rights",
+                link: "https://www.aclu.org/know-your-rights/protesters-rights"
+            }
+        ]
+    },{
         title: "Flour Massacre",
         date: "29/02/2024",
         description: "Israeli Occupying Forces unleashed violence massacring 112 people. These people only wished to gather flour.",
