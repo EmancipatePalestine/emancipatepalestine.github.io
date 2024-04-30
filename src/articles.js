@@ -44,7 +44,7 @@ const articles = [
             }
         ]
     },{
-        title: "Protesters' Rights",
+        title: "Protesters' Rights & How to Protect Yourself",
         date: "",
         description: "Rights you have as a protester.",
         image: "https://images.pexels.com/photos/18862248/pexels-photo-18862248/free-photo-of-police-standing-in-front-of-the-protestants-with-the-flag-of-palestine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
