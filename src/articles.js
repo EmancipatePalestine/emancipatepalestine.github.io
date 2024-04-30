@@ -39,8 +39,16 @@ const articles = [
         alt: "Protesters with police infront of them.",
         articleLinks:[
             {
+                name: "Tips to Help Your Mental Health",
+                link: "https://www.instagram.com/p/C6W5obSy0bN/?img_index=1"
+            },
+            {
                 name: "Protester Tips and Tricks",
                 link: "https://docs.google.com/document/d/1w6yaIjwFsssKVA-aYO1R5NNrmkXEDmoChm2mGrR3Mi0/edit?usp=sharing"
+            },
+            {
+                name: "How to handle being arrested",
+                link: "https://x.com/reachrachelkahn/status/1785057223195963672"
             },
             {
                 name: "NYU Protest Tips and Resources",
@@ -118,6 +126,15 @@ const articles = [
                 link: "https://twitter.com/Israel_katz/status/1712356130377113904"
             },
             "https://www.refugeesinternational.org/reports-briefs/siege-and-starvation-how-israel-obstructs-aid-to-gaza/",
+        ]
+    },{
+        title: "Children of Isreali are Taught to Support the Genocide in Gaza",
+        date: "21/11/23",
+        description: "Isreali children are encouraged to sing in support of the genocide of palestinians.",
+        image: "https://images.pexels.com/photos/270288/pexels-photo-270288.jpeg",
+        alt: "Image of two microphones",
+        articleLinks: [
+            "https://www.aljazeera.com/program/newsfeed/2023/11/21/israeli-state-tv-video-shows-children-singing-about-gaza"
         ]
     },{
         title: "Media Bias Gaza Reports",
