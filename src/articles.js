@@ -7,6 +7,14 @@ const articles = [
         alt: "People marching to protest against the israeli occupying force",
         articleLinks: [
             {
+                name: "BDS List",
+                link: "https://bdsmovement.net/Act-Now-Against-These-Companies-Profiting-From-Genocide"
+            },
+            {
+                name: "Isreal Lobby Donation Tracking",
+                link: "https://twitter.com/TrackAIPAC"
+            },
+            {
                 name: "Israel genocide tracker",
                 link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
             },
@@ -68,6 +76,38 @@ const articles = [
             }
         ]
     },{
+        title: "Life Before October 7th",
+        date: "07/10/23<",
+        description: "What life was like for palestinians before October 7th",
+        image: "https://images.pexels.com/photos/19028560/pexels-photo-19028560/free-photo-of-people-with-palestinian-flags-protesting-on-the-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "Palestine protest with a person holding a sign saying 'We have not slept since 1948'",
+        articleLinks: [
+            {
+                name: "98% if Palestian Building Requests Rejected",
+                link: "https://www.haaretz.com/israel-news/2020-01-21/ty-article/.premium/israel-rejects-98-of-palestinian-building-permit-requests-in-west-banks-area-c/0000017f-f7ce-d044-adff-f7ff0b250000"
+            },
+            {
+                name: "APNews Israel apartheid road",
+                link: "https://apnews.com/article/a0c47ad493fb4b31a444bfe432194f2e"
+            },
+            {
+                link:"https://www.aljazeera.com/news/2019/2/2/israel-opens-apartheid-road-in-occupied-west-bank",
+                name: "Aljazeera Israel apartheid road"
+            },
+            {
+                name: "Forbidden Roads PDF",
+                link: "https://www.btselem.org/download/200408_forbidden_roads_eng.pdf"
+            },
+            {
+                name: "Amnesty Israels system of apartheid",
+                link: "https://www.amnesty.org/en/latest/campaigns/2022/02/israels-system-of-apartheid/"
+            },
+            {
+                name: "Peaceful protests by palestinian civialians ended in massacre",
+                link: "https://www.unrwa.org/campaign/gaza-great-march-return"
+            }
+        ]
+    },{
         title: "Flour Massacre",
         date: "29/02/2024",
         description: "Israeli Occupying Forces unleashed violence massacring 112 people. These people only wished to gather flour.",
@@ -126,6 +166,26 @@ const articles = [
                 link: "https://twitter.com/Israel_katz/status/1712356130377113904"
             },
             "https://www.refugeesinternational.org/reports-briefs/siege-and-starvation-how-israel-obstructs-aid-to-gaza/",
+        ]
+    },{
+        title: "Israel Prisions Causes Systemic Rape Victims",
+        date: "19/02/24",
+        description: "Reports of prisions in Israel haunting women and girls of what occured.",
+        image: "https://images.pexels.com/photos/19458251/pexels-photo-19458251/free-photo-of-palestine-flag.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "Person facing away from camera wearing a kufiya on their head and palestine flag around them",
+        articleLinks: [
+            {
+                name: "UN Human Rights Report on Israel Prision",
+                link: "https://www.ohchr.org/en/press-releases/2024/02/israelopt-un-experts-appalled-reported-human-rights-violations-against"
+            },
+            {
+                name: "New York Times Abuse of Gazans",
+                link: "https://www.nytimes.com/2024/03/03/world/middleeast/unrwa-gaza-detention-israel.html"
+            },
+            {
+                name: "The Guardian on the UN Report",
+                link: "https://www.theguardian.com/world/2024/mar/05/gazan-detainees-beaten-and-sexually-assaulted-at-israeli-detention-centres-un-report-claims"
+            }
         ]
     },{
         title: "Children of Isreali are Taught to Support the Genocide in Gaza",
