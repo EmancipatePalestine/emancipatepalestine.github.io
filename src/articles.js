@@ -7,6 +7,10 @@ const articles = [
         alt: "People marching to protest against the israeli occupying force",
         articleLinks: [
             {
+                name: "Map of Studen Encampments and Demands",
+                link: "https://students4gaza.directory/"
+            },
+            {
                 name: "BDS List",
                 link: "https://bdsmovement.net/Act-Now-Against-These-Companies-Profiting-From-Genocide"
             },
