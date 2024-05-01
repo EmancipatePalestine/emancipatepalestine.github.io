@@ -12,12 +12,8 @@ const articles = [
 
             },
             {
-                name: "Isreal Lobby Donation Tracking",
-                link: "https://twitter.com/TrackAIPAC"
-            },
-            {
-                name: "Israel genocide tracker",
-                link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
+                name: "Decolonize Palestine Site",
+                link: "https://decolonizepalestine.com/"
             },
             {
                 link: "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
@@ -26,6 +22,14 @@ const articles = [
             {
                 name: "Books and articles about palestine",
                 link: "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
+            },
+            {
+                name: "Isreal Lobby Donation Tracking",
+                link: "https://twitter.com/TrackAIPAC"
+            },
+            {
+                name: "Israel genocide tracker",
+                link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
             }
         ]
     },{
