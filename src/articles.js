@@ -7,6 +7,11 @@ const articles = [
         alt: "People marching to protest against the israeli occupying force",
         articleLinks: [
             {
+                name: "Abdalhkem Abu Riash photo journalist in palestine",
+                link: "https://www.instagram.com/abdalhkem_abu_riash/"
+
+            },
+            {
                 name: "Isreal Lobby Donation Tracking",
                 link: "https://twitter.com/TrackAIPAC"
             },
