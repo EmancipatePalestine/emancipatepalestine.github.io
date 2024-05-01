@@ -7,14 +7,6 @@ const articles = [
         alt: "People marching to protest against the israeli occupying force",
         articleLinks: [
             {
-                name: "Map of Studen Encampments and Demands",
-                link: "https://students4gaza.directory/"
-            },
-            {
-                name: "BDS List",
-                link: "https://bdsmovement.net/Act-Now-Against-These-Companies-Profiting-From-Genocide"
-            },
-            {
                 name: "Isreal Lobby Donation Tracking",
                 link: "https://twitter.com/TrackAIPAC"
             },
@@ -25,18 +17,6 @@ const articles = [
             {
                 link: "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
                 name: "Resources for Palestinian Solidarity"
-            },
-            {
-                link: "https://docs.google.com/document/d/1tDok9kGqHQAsVhc27kpLLvS8BIdUqNk09PfV1_vLmwo/edit#heading=h.85rdaapi37z8",
-                name: "Daily Email automaition + resources + medical aid"
-            },
-            {
-                link: "https://ceasefiretoday.com/",
-                name: "Gaza ceasefire options what YOU can do."
-            },
-            {
-                link: "https://campusbailfunds.com/",
-                name: "Campus bail funds"
             },
             {
                 name: "Books and articles about palestine",
@@ -80,9 +60,41 @@ const articles = [
             }
         ]
     },{
+        title: "What YOU Can Do.",
+        date: "",
+        description: "Variety of links that allow you to support where you can.",
+        image: "https://images.pexels.com/photos/19028569/pexels-photo-19028569/free-photo-of-people-with-palestinian-flags-protesting-on-the-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "Person at protest wearing a kafiya around their neck. While holding a palestine flag.",
+        articleLinks: [
+            {
+                name: "Operation Olive Branch help families in Gaza",
+                link: "https://docs.google.com/spreadsheets/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit#gid=1653697245"
+            },
+            {
+                name: "Map of Studen Encampments and Demands",
+                link: "https://students4gaza.directory/"
+            },
+            {
+                name: "BDS List",
+                link: "https://bdsmovement.net/Act-Now-Against-These-Companies-Profiting-From-Genocide"
+            },
+            {
+                link: "https://docs.google.com/document/d/1tDok9kGqHQAsVhc27kpLLvS8BIdUqNk09PfV1_vLmwo/edit#heading=h.85rdaapi37z8",
+                name: "Daily Email automaition + resources + medical aid"
+            },
+            {
+                link: "https://ceasefiretoday.com/",
+                name: "Gaza ceasefire options what YOU can do."
+            },
+            {
+                link: "https://campusbailfunds.com/",
+                name: "Campus bail funds"
+            }
+        ]
+    },{
         title: "Life Before October 7th",
         date: "07/10/23<",
-        description: "What life was like for palestinians before October 7th",
+        description: "What life was like for Palestinian before October 7th",
         image: "https://images.pexels.com/photos/19028560/pexels-photo-19028560/free-photo-of-people-with-palestinian-flags-protesting-on-the-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "Palestine protest with a person holding a sign saying 'We have not slept since 1948'",
         articleLinks: [
@@ -107,7 +119,7 @@ const articles = [
                 link: "https://www.amnesty.org/en/latest/campaigns/2022/02/israels-system-of-apartheid/"
             },
             {
-                name: "Peaceful protests by palestinian civialians ended in massacre",
+                name: "Peaceful protests by Palestinian civialians ended in massacre",
                 link: "https://www.unrwa.org/campaign/gaza-great-march-return"
             }
         ]
@@ -194,7 +206,7 @@ const articles = [
     },{
         title: "Children of Isreali are Taught to Support the Genocide in Gaza",
         date: "21/11/23",
-        description: "Isreali children are encouraged to sing in support of the genocide of palestinians.",
+        description: "Isreali children are encouraged to sing in support of the genocide of Palestinian.",
         image: "https://images.pexels.com/photos/270288/pexels-photo-270288.jpeg",
         alt: "Image of two microphones",
         articleLinks: [
