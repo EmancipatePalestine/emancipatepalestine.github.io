@@ -1,38 +1,5 @@
 const articles = [
     {
-        title: "Other Resources",
-        date: "",
-        description: "Resources to find what other people have made",
-        image: "https://images.pexels.com/photos/10010406/pexels-photo-10010406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        alt: "People marching to protest against the israeli occupying force",
-        articleLinks: [
-            {
-                name: "Abdalhkem Abu Riash photo journalist in palestine",
-                link: "https://www.instagram.com/abdalhkem_abu_riash/"
-
-            },
-            {
-                name: "Decolonize Palestine Site",
-                link: "https://decolonizepalestine.com/"
-            },
-            {
-                link: "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
-                name: "Resources for Palestinian Solidarity"
-            },
-            {
-                name: "Books and articles about palestine",
-                link: "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
-            },
-            {
-                name: "Isreal Lobby Donation Tracking",
-                link: "https://twitter.com/TrackAIPAC"
-            },
-            {
-                name: "Israel genocide tracker",
-                link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
-            }
-        ]
-    },{
         title: "Protesters' Rights & How to Protect Yourself",
         date: "",
         description: "Rights you have as a protester.",
@@ -98,6 +65,39 @@ const articles = [
             {
                 link: "https://campusbailfunds.com/",
                 name: "Campus bail funds"
+            }
+        ]
+    },{
+        title: "Other Resources",
+        date: "",
+        description: "Resources to find what other people have made",
+        image: "https://images.pexels.com/photos/10010406/pexels-photo-10010406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        alt: "People marching to protest against the israeli occupying force",
+        articleLinks: [
+            {
+                name: "Abdalhkem Abu Riash photo journalist in palestine",
+                link: "https://www.instagram.com/abdalhkem_abu_riash/"
+
+            },
+            {
+                name: "Decolonize Palestine Site",
+                link: "https://decolonizepalestine.com/"
+            },
+            {
+                link: "https://docs.google.com/document/d/1sLUKG5HwKtFZZXaPOT3venMDq9PnJ_NM5dFzAhTRt_Q/edit#heading=h.hg4tp0gpsmmu",
+                name: "Resources for Palestinian Solidarity"
+            },
+            {
+                name: "Books and articles about palestine",
+                link: "https://drive.google.com/drive/folders/1zqyxFMrGP3fFifjAC75wk5QjMMYC96eo"
+            },
+            {
+                name: "Isreal Lobby Donation Tracking",
+                link: "https://twitter.com/TrackAIPAC"
+            },
+            {
+                name: "Israel genocide tracker",
+                link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
             }
         ]
     },{
