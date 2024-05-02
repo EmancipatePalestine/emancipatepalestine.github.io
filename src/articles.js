@@ -43,6 +43,10 @@ const articles = [
         alt: "Person at protest wearing a kafiya around their neck. While holding a palestine flag.",
         articleLinks: [
             {
+                name: "Support A Gaza Doctor Get Out of This Genocide.",
+                link: "https://www.gofundme.com/f/8sdyks-help-me-evacuate-my-family-from-gaza?utm_campaign=p_cp+share-sheet&utm_medium=qr_code&utm_source=customer"
+            },
+            {
                 name: "Operation Olive Branch help families in Gaza",
                 link: "https://docs.google.com/spreadsheets/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit#gid=1653697245"
             },
