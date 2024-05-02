@@ -237,6 +237,10 @@ const articles = [
             {
                 name: "Journalist Comparing articles tweet",
                 link: "https://twitter.com/AssalRad/status/1767728865537839317"
+            },
+            {
+                name: "Investigation of October 7th sexual assualts were found to be made up.",
+                link: "https://www.npr.org/2024/03/03/1235606433/an-investigation-into-a-new-york-times-story-is-causing-internal-chaos-at-the-co"
             }
         ]
     },{
