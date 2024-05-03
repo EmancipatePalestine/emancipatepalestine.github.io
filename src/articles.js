@@ -19,6 +19,10 @@ const articles = [
                 link: "https://x.com/reachrachelkahn/status/1785057223195963672"
             },
             {
+                name: "Arrest Will Template",
+                link: "https://docs.google.com/document/d/1NSkuYVVCu-9VDA5Almwh66T9uSa9D-rKiN2yK6lFExg/mobilebasic"
+            },
+            {
                 name: "NYU Protest Tips and Resources",
                 link: "https://www.law.nyu.edu/centers/race-inequality-law/protest-tips",
             }, 
