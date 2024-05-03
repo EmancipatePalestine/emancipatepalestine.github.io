@@ -109,6 +109,30 @@ const articles = [
             }
         ]
     },{
+        title: "How the US Supports the genocide on Gaza",
+        date: "26/02/2024",
+        description: "Articles talking about how the US gives weapons to Israel to genocide the people of Gaza.",
+        image: "https://cdn.pixabay.com/photo/2021/12/06/03/20/university-of-connecticut-6849167_960_720.jpg",
+        alt: "Joe Biden in a black car near a university",
+        articleLinks: [
+            {
+                name: "How has the US extended military support",
+                link: "https://www.aa.com.tr/en/middle-east/israel-s-war-on-gaza-how-has-the-us-extended-military-support-to-its-biggest-recipient/3148155#:~:text=Munitions%20and%20weapons&text=A%20report%20by%20the%20Wall,direct%20attack%20munitions%20(JDAM).",
+            },
+            {
+                name: "US Extends Definition of anti-Semitism to Include Israel",
+                link: "https://www.aljazeera.com/news/2024/5/1/us-house-passes-controversial-bill-that-expands-definition-of-anti-semitism"
+            },
+            {
+                name: "How US violates its own Leahy Law to give Military Support",
+                link: "https://www.aljazeera.com/news/2024/5/2/how-us-violates-its-own-leahy-law-to-ensure-military-support-for-israel"
+            },
+            {
+                name: "US Send $15 Billion to Israel to Genocide the civilians in Gaza",
+                link: "https://www.nytimes.com/2024/04/24/world/middleeast/israel-us-aid.html"
+            }
+        ]
+    },{
         title: "Life Before October 7th",
         date: "07/10/23<",
         description: "What life was like for Palestinian before October 7th",
@@ -246,16 +270,6 @@ const articles = [
                 name: "Investigation of October 7th sexual assualts were found to be made up.",
                 link: "https://www.npr.org/2024/03/03/1235606433/an-investigation-into-a-new-york-times-story-is-causing-internal-chaos-at-the-co"
             }
-        ]
-    },{
-        title: "How the US Supports the genocide on Gaza",
-        date: "26/02/2024",
-        description: "Articles talking about how the US gives weapons to Israel to genocide the people of Gaza.",
-        image: "https://cdn.pixabay.com/photo/2021/12/06/03/20/university-of-connecticut-6849167_960_720.jpg",
-        alt: "Joe Biden in a black car near a university",
-        articleLinks: [
-            "https://www.aa.com.tr/en/middle-east/israel-s-war-on-gaza-how-has-the-us-extended-military-support-to-its-biggest-recipient/3148155#:~:text=Munitions%20and%20weapons&text=A%20report%20by%20the%20Wall,direct%20attack%20munitions%20(JDAM).",
-
         ]
     }
 ]
