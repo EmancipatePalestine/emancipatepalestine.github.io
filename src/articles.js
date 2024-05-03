@@ -124,6 +124,10 @@ const articles = [
                 link: "https://www.aljazeera.com/news/2024/5/1/us-house-passes-controversial-bill-that-expands-definition-of-anti-semitism"
             },
             {
+                name: "US anti-Semitism passes house",
+                link: "https://clerk.house.gov/Votes/2024172"
+            },
+            {
                 name: "How US violates its own Leahy Law to give Military Support",
                 link: "https://www.aljazeera.com/news/2024/5/2/how-us-violates-its-own-leahy-law-to-ensure-military-support-for-israel"
             },
