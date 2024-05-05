@@ -255,7 +255,11 @@ const articles = [
         image: "https://images.pexels.com/photos/270288/pexels-photo-270288.jpeg",
         alt: "Image of two microphones",
         articleLinks: [
-            "https://archive.is/8XEuR"
+            "https://archive.is/8XEuR",
+            {
+                name: "Video of the singing",
+                link: "https://www.youtube.com/watch?v=sUpm2jGJc18"
+            }
         ]
     },{
         title: "Media Bias Gaza Reports",
