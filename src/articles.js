@@ -104,8 +104,8 @@ const articles = [
                 link: "https://twitter.com/TrackAIPAC"
             },
             {
-                name: "Israel genocide tracker",
-                link: "https://www.aljazeera.com/news/longform/2023/10/9/israel-hamas-war-in-maps-and-charts-live-tracker"
+                name: "Israel genocide tracker taken down by Israel",
+                link: "https://archive.is/8R9ZA"
             }
         ]
     },{
@@ -121,7 +121,7 @@ const articles = [
             },
             {
                 name: "US Extends Definition of anti-Semitism to Include Israel",
-                link: "https://www.aljazeera.com/news/2024/5/1/us-house-passes-controversial-bill-that-expands-definition-of-anti-semitism"
+                link: "https://archive.is/Hlz4r"
             },
             {
                 name: "US anti-Semitism passes house",
@@ -129,7 +129,7 @@ const articles = [
             },
             {
                 name: "How US violates its own Leahy Law to give Military Support",
-                link: "https://www.aljazeera.com/news/2024/5/2/how-us-violates-its-own-leahy-law-to-ensure-military-support-for-israel"
+                link: "https://archive.is/UVsPr"
             },
             {
                 name: "US Send $15 Billion to Israel to Genocide the civilians in Gaza",
@@ -152,7 +152,7 @@ const articles = [
                 link: "https://apnews.com/article/a0c47ad493fb4b31a444bfe432194f2e"
             },
             {
-                link:"https://www.aljazeera.com/news/2019/2/2/israel-opens-apartheid-road-in-occupied-west-bank",
+                link:"https://archive.is/lL327",
                 name: "Aljazeera Israel apartheid road"
             },
             {
@@ -255,7 +255,7 @@ const articles = [
         image: "https://images.pexels.com/photos/270288/pexels-photo-270288.jpeg",
         alt: "Image of two microphones",
         articleLinks: [
-            "https://www.aljazeera.com/program/newsfeed/2023/11/21/israeli-state-tv-video-shows-children-singing-about-gaza"
+            "https://archive.is/8XEuR"
         ]
     },{
         title: "Media Bias Gaza Reports",
