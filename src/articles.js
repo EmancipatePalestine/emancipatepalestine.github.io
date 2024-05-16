@@ -7,6 +7,18 @@ const articles = [
         alt: "Protesters with police infront of them.",
         articleLinks:[
             {
+                name: "Guide to De-arresting",
+                link: "https://haters.noblogs.org/files/2024/04/DArrFormatted.pdf"
+            },
+            {
+                name: "Guide to basic first aid",
+                link: "https://archive.org/details/AnActivistsGuideToBasicFirstAid/activists_guide_basic_first_aid-SCREEN/mode/2up"
+            },
+            {
+                name: "Survelliance Self-Defence",
+                link: "https://ssd.eff.org/module/attending-protest"
+            },
+            {
                 name: "Tips to Help Your Mental Health",
                 link: "https://www.instagram.com/p/C6W5obSy0bN/?img_index=1"
             },
@@ -17,6 +29,10 @@ const articles = [
             {
                 name: "How to handle being arrested",
                 link: "https://x.com/reachrachelkahn/status/1785057223195963672"
+            },
+            {
+                name: "Abolition Jounal's tips for protest",
+                link: "https://abolitionjournal.org/tips-for-protest/"
             },
             {
                 name: "Arrest Will Template",
